@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="x-apple-disable-message-reformatting" />
     <title>Document</title>
     <style>
       * {
@@ -29,23 +30,40 @@
         align-items: center;
       }
 
-      h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(83, 83, 83);
-        font-weight: bold;
-        text-align: center;
+      .facebook {
       }
       .columns {
         display: flex;
         flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 40px;
       }
 
       .col-one {
         max-width: 50%;
+        padding-right: 5px;
+      }
+
+      .col-one p {
+        line-height: 1.5;
+        padding-bottom: 3px;
+      }
+
+      .read-more {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(170, 61, 61);
+      }
+
+      .share {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(24, 24, 148);
       }
 
       .col-two {
         max-width: 50%;
+        padding-left: 5px;
       }
     </style>
   </head>
@@ -54,7 +72,16 @@
       <img src="img/header5.jpg" alt="hockey players" class="header" />
     </div>
     <div id="headline">
-      <h1>The Right Team vs. Elite Team</h1>
+      <h1
+        style="
+          font-family: Arial, Helvetica, sans-serif;
+          color: rgb(83, 83, 83);
+          font-weight: bold;
+          text-align: center;
+        "
+      >
+        The Right Team vs. Elite Team
+      </h1>
     </div>
     <div class="columns">
       <div class="col-one">
@@ -64,9 +91,28 @@
           distinctio est accusamus tempora necessitatibus atque. Earum
           cupiditate vitae sit id quam. Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Aliquid sit, a nostrum nemo tenetur explicabo
-          accusamus asperiores architecto vitae quisquam deleniti aspernatur
-          impedit voluptatem ipsa. Optio nesciunt totam expedita molestiae!
+          accusamus!
         </p>
+
+        <span class="read-more">READ MORE</span>
+        <span class="share"> // SHARE</span>
+        <span class="facebook">
+          <a href="https://www.facebook.com">
+            <img
+              src="img/facebook.png"
+              width="27"
+              height="27"
+              alt="facebook icon" /></a
+        ></span>
+        <span class="twitter">
+          <a href="https://twitter.com">
+            <img
+              src="img/twitter.png"
+              width="27"
+              height="27"
+              alt="twitter icon"
+            /> </a
+        ></span>
       </div>
       <!-- end col-one -->
       <div class="col-two">
@@ -75,5 +121,48 @@
       <!-- end col two -->
     </div>
     <!-- end columns -->
+    <div class="abc" style="padding-top: 2px; position: relative">
+      <img src="img/f-abc.png" alt="ABC's of ADM" />
+      <div
+        style="
+          position: absolute;
+          bottom: 0;
+          padding-top: 20;
+          right: 5px;
+          max-width: 75%;
+          padding-bottom: 30px;
+        "
+      >
+        <h3 style="color: rgb(188, 184, 184)">FUN & FUNDAMENTALS</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quam
+          suscipit rerum dolorem iusto natus modi, aut, fugiat sit, iste earum
+          iure! Voluptates quod ducimus ea dicta, molestiae explicabo veritatis?
+        </p>
+        <span class="read-more">READ MORE</span>
+        <span class="share"> // SHARE</span>
+        <span class="facebook">
+          <a href="https://www.facebook.com">
+            <img
+              src="img/facebook.png"
+              width="27"
+              height="27"
+              alt="facebook icon" /></a
+        ></span>
+        <span class="twitter">
+          <a href="https://twitter.com">
+            <img
+              src="img/twitter.png"
+              width="27"
+              height="27"
+              alt="twitter icon"
+            /> </a
+        ></span>
+      </div>
+    </div>
+    <!-- abc end -->
+    <!-- <div style="background-color: blanchedalmond; padding-top: 40px">
+      <img src="img/featured-video.jpg" alt="featured video" />
+    </div> -->
   </body>
 </html>
